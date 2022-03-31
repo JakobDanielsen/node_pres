@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>NODE PRESENTASJON</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/11243ec19d.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <section id="start">
+        <!-- <i class="fa-brands fa-node-js"></i> -->
+        <h1 class="text-center display-1 fw-bolder pb-5" >Introduksjon til Node.js</h1>
+        <img class="rounded mx-auto d-block m-5" height="200px"  src="img/node.png" >
+        <!-- <i class="fa-brands fa-node-js"></i> -->
+    </section>
+    <section class="darksection" id="info">
+        <div class="p-5 mb-4rounded-3">
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold pb-5">Hva er Node.js?</h1>
+              <p class=" fs-3">
+                Node.js er et kraftig open source program som gjør at man kan kjøre JavaScript i terminal uten å gjøre det i en nettleser.
+                Node ble skrevet i 2009 av Ryan Dahl men er nå et samarbeidsprosjekt mellom veldig mange,
+                det kommer fortsatt små oppdateringer månedtlig. Node og er et utrolig mye brukt og viktig verktøy å beherske.
+              </p>
+            </div>
+          </div>
+    </section>
+    <section id="download">
+      <div class="p-5 mb-4rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold pb-5">Hvordan laste ned</h1>
+        <p class="fs-3">
+          For å laste ned node  <a target="_blank" href="https://nodejs.org/en/download/">gå til denne linken.</a>
+           Node er til både Mac, Windows og Linux og er gratis <br>
+           Det er anbefalt å laste ned LTS versjonen og ikke current. Current har flere funksjoner men er ofte mindre stabil.
+
+        </p>
+        <img class="py-5" src="img/nodedownload.png" width="800px" alt="">
+        </div>
+      </div>
+    </section>
+    
+    <section class="darksection" id="what_it_does">
+      <div class="p-5 mb-4rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold pb-5">Hva gjør node</h1>
+          <p class="fs-3">
+            Node gjør at alle kan kjøre JavaScript på sin egen PC i terminal, uten å måtte bruke inspect element på en nettleser. 
+            Det er mange forskjellige terminaler man kan bruke, både innebygd i skriveprogram og innebygd i PCen. Før i tiden brukte folk konsollen i nettlesere for å bruke JavaScript på egen PC
+            
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how_to_use">
+      <div class="p-5 mb-4rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold pb-5">Hvordan bruke node</h1>
+          <p class="fs-3">
+            Naviger deg frem til mappen med js filen i terminal, dette gjør du ved å bruke "cd" kommandoen (change directory).
+            Du kan bruke kommandoen "ls" underveis for å få opp en liste over alle mappene og filene i mappen du er i.
+            Når du er i mappen med js filen skriver du "node (filnavn)"
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="darksection" id="demo">
+      <div class="p-5 mb-4rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold pb-5">Demonstrasjon</h1>
+          <p class="fs-3">
+            Her er hvordan man navigerer seg til et node fil og kjører den på MacOS
+          </p>
+          <div class="bg-dark rounded-3">
+            <pre class="fs-3 text-light p-5">
+name@user-MacBook-Pro ~ % 
+name@user-MacBook-Pro ~ % cd Desktop/Skole/oppgaver
+name@user-MacBook-Pro oppgaver %
+name@user-MacBook-Pro oppgaver % node oppgave1.js
+Hello world!
+name@user-MacBook-Pro oppgaver %
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="npm">
+      <div class="p-5 mb-4rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="d-inline display-5 fw-bold pb-5">Node packet manager</h1>
+          <img class="d-inline mx-5" src="img/npm.png" height="150px">
+          <p class="fs-3">
+            NPM er forkortelse for Node packet manager og er et bibliotek av plugins av forhåndsskrevet kode man kan bruke i prosjektene sine. 
+            NPM pakker installeres i terminal og er veldig lett.
+         <br> <br> Her er to viktige packets alle serverapplikasjoner bruker</p>
+            <ul class="py-5">
+              <li>
+                <h1 class="fs-3">
+                  Express
+                </h1>
+                <p class="fs-3">
+                  Express er en node extension som gjør at det er mulig å sette opp en server og ikke bare ha statisk innhold til nettsiden sin, 
+                  express er en node pakke du vil se omtrent over alt.
+                </p>
+              </li>
+              <li>
+                <h1 class="fs-3">
+                Nodemon
+                </h1>
+                <p class="fs-3">
+                Nodemon er et program som funker akkurat som node, men den er ment for å kjøre serverapplikasjoner istedenfor vanlige scripts. 
+                Hver gang en endring skjer i filen nodemon kjører blir serveren startet på nytt.
+                </p>
+              </li>
+              <li>
+                <h1 class="fs-3">
+                Body-parser
+                </h1>
+                <p class="fs-3">
+                Bodyparser er en npm packet som gjør at man kan gjøre overgangen fra variabler som sendes gjennom express lettere. 
+                </p>
+              </li>
+          </ul>
+
+          <h1 class="display-5 fw-bold pb-5">
+            Eksempel på å installere pakker:
+          </h1>
+          <p class="fs-3">
+            For at man skal kunne laste ned pakker må man starte med npm init, som står for initialize. 
+            Etter du har initialisert npm vil du bli spurt om masse spørsmål, det går helt fint å hoppe over alle med Enter
+          </p>
+          <div class="bg-dark rounded-3 mb-5">
+            <pre class="fs-3 text-light p-5"> 
+name@user-MacBook-Pro oppgaver % npm init
+            </pre>
+          </div>
+          <p class="fs-3">
+            Du kan bruke i istendfor install for å spare tid
+          </p>
+          <div class="bg-dark rounded-3 mb-5">
+            <pre class="fs-3 text-light p-5"> 
+name@user-MacBook-Pro oppgaver % npm i express
+name@user-MacBook-Pro oppgaver % npm i nodemon
+name@user-MacBook-Pro oppgaver % npm i body-parser
+            </pre>
+          </div>
+          <p class="fs-3">
+            Nå som vi har installert pakkene du vil ha kan du bruke "require" funksjonen og bruke dens funksjonalitet
+          </p>
+          <div class="bg-dark p-5 rounded-3">
+          <code class="fs-3">
+            require("express")
+            <br>
+            const app = express()
+          </code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="darksection" id="end">
+      <div class="p-5 mb-4rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold pb-5">Sammendrag</h1>
+          <p class="fs-3">
+            Alt i alt er bare Node.js helt vanlig Javascript men at man kan bruke det på sin egen PC og man kan bruke plugins
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+  </body>
+</html>
